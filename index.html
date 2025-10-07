@@ -150,23 +150,32 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>					
           <tr onmouseout="pgocc_stop()" onmouseover="pgocc_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='pgocc_still'><img src="images/pg-occ-nips25/pipeline.png" width="200"></div>
-              <!-- <div id='pgocc_anim' style="display:none;"><img src="images/pg-occ-nips25/pipeline.gif" width="200"></div> -->
-              <!-- <script type="text/javascript">
+              <div id='pgocc_still_container'>
+                <img id="pgocc_still_img" src="images/pg-occ-nips25/pipeline.png" width="200" style="display:inline;">
+              </div>
+              <video id="pgocc_demo" width="200" style="display:none;" muted loop>
+                <source src="images/pg-occ-nips25/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <script type="text/javascript">
                 function pgocc_start() {
-                  document.getElementById('pgocc_anim').style.display = 'inline';
-                  document.getElementById('pgocc_still').style.display = 'none';
+                  document.getElementById('pgocc_still_img').style.display = 'none';
+                  var vid = document.getElementById('pgocc_demo');
+                  vid.style.display = 'inline';
+                  vid.play();
                 }
-
                 function pgocc_stop() {
-                  document.getElementById('pgocc_anim').style.display = 'none';
-                  document.getElementById('pgocc_still').style.display = 'inline';
+                  var vid = document.getElementById('pgocc_demo');
+                  vid.pause();
+                  vid.currentTime = 0;
+                  vid.style.display = 'none';
+                  document.getElementById('pgocc_still_img').style.display = 'inline';
                 }
-                pgocc_stop()
-              </script> -->
+                pgocc_stop();
+              </script>
             </td>
             <td width="75%" valign="middle">
-              <a href="">
+              <a href="https://yanchi-3dv.github.io/PG-Occ/">
                 <papertitle>Progressive Gaussian Transformer with Anisotropy-aware Sampling for Open Vocabulary Occupancy Prediction</papertitle>
               </a>
               <br>
@@ -175,9 +184,9 @@
               <br>
               <em>ArXiv</em>, 2025 (under review)
               <br>
-              <a href="">project page</a> /
-              <a href="">arxiv</a> /
-              <a href="">code</a> 
+              <a href="https://yanchi-3dv.github.io/PG-Occ/">project page</a> /
+              <a href="https://arxiv.org/abs/2510.04759">arxiv</a> /
+              <a href="https://github.com/yanchi-3dv/PG-Occ">code</a> 
             </td>
           </tr>
         </tbody></table>
@@ -193,34 +202,54 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>					
-
-          <tr>
+          <tr onmouseout="gscream_stop()" onmouseover="gscream_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='aeroalvg_still'><img src="images/aerialvg-iccv25/AerialVG.png" width="200"></div>
+              <div id='gscream_still'>
+                <img id="gscream_still_img" src="images/gsslam-cvpr24/teaser.png" width="200" style="display:inline;">
+              </div>
+              <video id="gscream_demo" width="200" style="display:none;" muted loop>
+                <source src="images/gsslam-cvpr24/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <script type="text/javascript">
+                function gscream_start() {
+                  document.getElementById('gscream_still_img').style.display = 'none';
+                  var vid = document.getElementById('gscream_demo');
+                  vid.style.display = 'inline';
+                  vid.play();
+                }
+
+                function gscream_stop() {
+                  var vid = document.getElementById('gscream_demo');
+                  vid.pause();
+                  vid.currentTime = 0;
+                  vid.style.display = 'none';
+                  document.getElementById('gscream_still_img').style.display = 'inline';
+                }
+                gscream_stop();
+              </script>
             </td>
             <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2504.07836">
-                <papertitle>AerialVG: A Challenging Benchmark for Aerial Visual Grounding by Exploring Positional Relations</papertitle>
+              <a href="https://gs-slam.github.io/">
+                <papertitle>GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting</papertitle>
               </a>
               <br>
-              <a href="">Junli Liu</a>, 
-              <a href="">Qizhi Chen</a>, 
-              <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ">Zhigang Wang</a>, 
-              <a href="">Yiwen Tang</a>, 
-              <a href="">Yiting Zhang</a>, 
               <strong>Chi Yan</strong>, 
-              <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ">Dong Wang</a>, 
+              <a href="">Delin Qu</a>,
+              <a href="https://www.danxurgb.net/index.html">Dan Xu</a>, 
               <a href="https://scholar.google.com/citations?user=DQB0hqwAAAAJ">Bin Zhao</a>, 
+              <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ">Zhigang Wang</a>,
+              <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ">Dong Wang</a>,
               <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>
               <br>
-              <strong><em>ICCV</em>, 2025</strong>
+              <strong style="color:red;"><em>CVPR</em>, 2024 (Spotlight, top 2.6%)</strong>
               <br>
-              <a href="https://arxiv.org/abs/2504.07836">arxiv</a> /
-              <a href="https://huggingface.co/datasets/IPEC-COMMUNITY/AerialVG">data</a> /
-              <a href="https://github.com/Ideal-ljl/AerialVG">code</a>
+              <a href="https://gs-slam.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2311.11700">arxiv</a> /
+              <a href="https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam">code</a>
             </td>
           </tr>
-          
+
           <tr onmouseout="enslam_stop()" onmouseover="enslam_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div id='enslam_still_container'>
@@ -271,51 +300,30 @@
             </td>
           </tr>
 
-          <tr onmouseout="gscream_stop()" onmouseover="gscream_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='gscream_still'>
-                <img id="gscream_still_img" src="images/gsslam-cvpr24/teaser.png" width="200" style="display:inline;">
-              </div>
-              <video id="gscream_demo" width="200" style="display:none;" muted loop>
-                <source src="images/gsslam-cvpr24/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <script type="text/javascript">
-                function gscream_start() {
-                  document.getElementById('gscream_still_img').style.display = 'none';
-                  var vid = document.getElementById('gscream_demo');
-                  vid.style.display = 'inline';
-                  vid.play();
-                }
-
-                function gscream_stop() {
-                  var vid = document.getElementById('gscream_demo');
-                  vid.pause();
-                  vid.currentTime = 0;
-                  vid.style.display = 'none';
-                  document.getElementById('gscream_still_img').style.display = 'inline';
-                }
-                gscream_stop();
-              </script>
+              <div id='aeroalvg_still'><img src="images/aerialvg-iccv25/AerialVG.png" width="200"></div>
             </td>
             <td width="75%" valign="middle">
-              <a href="https://gs-slam.github.io/">
-                <papertitle>GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting</papertitle>
+              <a href="https://arxiv.org/abs/2504.07836">
+                <papertitle>AerialVG: A Challenging Benchmark for Aerial Visual Grounding by Exploring Positional Relations</papertitle>
               </a>
               <br>
+              <a href="">Junli Liu</a>, 
+              <a href="">Qizhi Chen</a>, 
+              <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ">Zhigang Wang</a>, 
+              <a href="">Yiwen Tang</a>, 
+              <a href="">Yiting Zhang</a>, 
               <strong>Chi Yan</strong>, 
-              <a href="">Delin Qu</a>,
-              <a href="https://www.danxurgb.net/index.html">Dan Xu</a>, 
+              <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ">Dong Wang</a>, 
               <a href="https://scholar.google.com/citations?user=DQB0hqwAAAAJ">Bin Zhao</a>, 
-              <a href="https://scholar.google.com/citations?user=cw3EaAYAAAAJ">Zhigang Wang</a>,
-              <a href="https://scholar.google.com/citations?user=dasL9V4AAAAJ">Dong Wang</a>,
               <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>
               <br>
-              <strong style="color:red;"><em>CVPR</em>, 2024 (Spotlight, top 2.6%)</strong>
+              <strong><em>ICCV</em>, 2025</strong>
               <br>
-              <a href="https://gs-slam.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2311.11700">arxiv</a> /
-              <a href="https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam">code</a>
+              <a href="https://arxiv.org/abs/2504.07836">arxiv</a> /
+              <a href="https://huggingface.co/datasets/IPEC-COMMUNITY/AerialVG">data</a> /
+              <a href="https://github.com/Ideal-ljl/AerialVG">code</a>
             </td>
           </tr>
         </tbody></table>
@@ -333,7 +341,7 @@
             <tr>
               <td width="100%" style="width:100%; padding:0 0px;">
                 <ul class="navlist">	
-                  <li><strong>May. 2024 - Now:</strong> Perception Algorithm Intern, ZID Group, <a href="https://www.zeekrlife.com/global/" target="_blank">ZEEKR</a></li>
+                  <li><strong>May. 2024 - Oct. 2025:</strong> Perception Algorithm Intern, ZID Group, <a href="https://www.zeekrlife.com/global/" target="_blank">ZEEKR</a></li>
                   <li><strong>July. 2022 - May. 2024:</strong> Computer Vision Intern, <a href="https://www.pjlab-ipec.com/" target="_blank">IPEC Group</a>, <a href="https://www.shlab.org.cn/" target="_blank">Shanghai AI Laboratory</a></li>
                 </ul>   
               </td>
@@ -359,8 +367,11 @@
               <!-- <td width="100%" valign="center" style="line-height: 15px;"> -->
               <td width="100%" style="width:100%; padding:0 0px;">
                 <ul class="navlist">	
-                  <li>Reviewer for Conference: <strong>CVPR, ICCV, ECCV, ICRA and NeurIPS</strong></li>
-                  <li>Teaching Assistant: <strong>Deep 2D and 3D Visual Scene Understanding, 2025 Spring</strong> </li> 
+                  <li><strong>Reviewer for Conference: </strong>CVPR, ICCV, ECCV, ICRA, ICLR and NeurIPS</li>
+                  <li><strong>Teaching Assistant: </strong>
+                    <span style="display:block;margin-left:1.5em;">COMP5422: Deep 2D and 3D Visual Scene Understanding, 2025 Spring</span>
+                    <span style="display:block;margin-left:1.5em;">COMP1021: Introduction to Computer Science, 2025 Fall</span>
+                  </li> 
                   <!-- , Spring 2023 -->
                 </ul>   
                 <!-- <ul class="navlist">	
