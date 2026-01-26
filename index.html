@@ -125,6 +125,7 @@
               <td class="wsite-multicol-col" style="width:100%; padding:0 0px;">
                 <div class="paragraph" style="text-align:justify;max-height: 622px; overflow:auto; max-width: 9999999999px">
                   <ul class="navlist">	
+                    <li><strong>Jan. 26, 2026:</strong> Our paper <a href="https://yanchi-3dv.github.io/PG-Occ/">PG-Occ</a> is accepted by ICLR 2026. Thanks to Prof. Dan Xu for his great help.</li>
                     <li><strong>July. 11, 2025:</strong> New website launches.</li>
                   </ul>
                 </div>
@@ -133,39 +134,42 @@
           </tbody>
         </table>
 
-        <a id="pre-prints"></a>
+        <!-- <a id="pre-prints"></a>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Pre-Prints</heading>
             </td>
           </tr>
+        </tbody></table> -->
+
+
+        <a id="conference"></a>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Conference</heading>
+            </td>
+          </tr>
         </tbody></table>
 
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>					
           <tr onmouseout="pgocc_stop()" onmouseover="pgocc_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='pgocc_still_container'>
-                <img id="pgocc_still_img" src="images/pg-occ-nips25/pipeline.png" width="200" style="display:inline;">
-              </div>
-              <video id="pgocc_demo" width="200" style="display:none;" muted loop>
-                <source src="images/pg-occ-nips25/demo.mp4" type="video/mp4">
+              <video id="pgocc_demo" width="200" muted loop preload="metadata">
+                <source src="images/pg-occ-nips25/demo.mp4#t=0.001" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <script type="text/javascript">
                 function pgocc_start() {
-                  document.getElementById('pgocc_still_img').style.display = 'none';
                   var vid = document.getElementById('pgocc_demo');
-                  vid.style.display = 'inline';
                   vid.play();
                 }
                 function pgocc_stop() {
                   var vid = document.getElementById('pgocc_demo');
                   vid.pause();
                   vid.currentTime = 0;
-                  vid.style.display = 'none';
-                  document.getElementById('pgocc_still_img').style.display = 'inline';
                 }
                 pgocc_stop();
               </script>
@@ -178,21 +182,11 @@
               <strong>Chi Yan</strong>, 
               <a href="https://www.danxurgb.net/index.html">Dan Xu</a>
               <br>
-              <em>ArXiv</em>, 2025 (under review)
+              <strong style="color:red;"><em>ICLR</em>, 2026</strong>
               <br>
               <a href="https://yanchi-3dv.github.io/PG-Occ/">project page</a> /
               <a href="https://arxiv.org/abs/2510.04759">arxiv</a> /
               <a href="https://github.com/yanchi-3dv/PG-Occ">code</a> 
-            </td>
-          </tr>
-        </tbody></table>
-
-
-        <a id="conference"></a>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Conference</heading>
             </td>
           </tr>
         </tbody></table>
@@ -315,7 +309,7 @@
               <a href="https://scholar.google.com/citations?user=DQB0hqwAAAAJ">Bin Zhao</a>, 
               <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>
               <br>
-              <strong><em>ICCV</em>, 2025</strong>
+              <strong style="color:red;"><em>ICCV</em>, 2025</strong>
               <br>
               <a href="https://arxiv.org/abs/2504.07836">arxiv</a> /
               <a href="https://huggingface.co/datasets/IPEC-COMMUNITY/AerialVG">data</a> /
