@@ -6,7 +6,7 @@
   <meta name="author" content="Jon Barron">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=work-thumbs-5">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😇</text></svg>">
   
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
@@ -52,8 +52,7 @@
                   <ul class="nav navbar-nav navbar-right">
                       <li style="font-size:20px"><a class='name' href="">Home</a></li>
                       <li style="font-size:20px"><a class='name' href="#news">News</a></li>
-                      <li style="font-size:20px"><a class='name' href="#pre-prints">Pre-prints</a></li>
-                      <li style="font-size:20px"><a class='name' href="#projects">Projects</a></li>
+                      <li style="font-size:20px"><a class='name' href="#pre-prints">Preprints</a></li>
                       <li style="font-size:20px"><a class='name' href="#conference">Conference</a></li>
                       <li style="font-size:20px"><a class='name' href="#interships">Interships</a></li>
                       <li style="font-size:20px"><a class='name' href="#services">Services</a></li>
@@ -127,7 +126,7 @@
                 <div class="paragraph" style="text-align:justify;max-height: 622px; overflow:auto; max-width: 9999999999px">
                   <ul class="navlist">	
                     <li><strong>Nov. 2026</strong> · Our <a href="https://arxiv.org/abs/2611.27915">StereoVLM preprint</a> is now on arXiv. The <a href="https://xpeng-robotics.github.io/stereovlm/">project page</a> is live.</li>
-                    <li><strong>June 30, 2026</strong> · Our <a href="https://xpeng-robotics.github.io/si0/">Si₀ project page</a> explores which spatial skills transfer to robot manipulation.</li>
+                    <li><strong>June 30, 2026</strong> · Our <a href="https://xpeng-robotics.github.io/si0/">Si₀ blog post</a> explores which spatial skills transfer to robot manipulation.</li>
                     <li><strong>Jan. 26, 2026:</strong> Our paper <a href="https://yanchi-3dv.github.io/PG-Occ/">PG-Occ</a> is accepted by ICLR 2026. Thanks to Prof. Dan Xu for his great help.</li>
                     <li><strong>July. 11, 2025:</strong> New website launches.</li>
                   </ul>
@@ -137,11 +136,10 @@
           </tbody>
         </table>
 
-        <a id="pre-prints"></a>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="pre-prints" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Pre-Prints</heading>
+              <heading>Preprints</heading>
             </td>
           </tr>
         </tbody></table>
@@ -149,30 +147,30 @@
         <table style="width:100%;border:0;border-spacing:0;margin:auto"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <a href="https://xpeng-robotics.github.io/stereovlm/"><img src="images/stereovlm-teaser.webp" width="200" alt="StereoVLM overview showing calibrated stereo inputs and metric depth prediction"></a>
+              <a href="https://xpeng-robotics.github.io/stereovlm/"><span class="work-thumb stereo-thumb"><img src="images/stereovlm-panel-b.png?v=2" width="200" height="125" alt="StereoVLM teaser: the left and right camera views, camera calibration, and the predicted orange depth of 0.64 m"></span></a>
             </td>
             <td style="width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2611.27915"><papertitle>StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning</papertitle></a><br>
               <strong>Chi Yan</strong>, Guoyang Zhao, Wentao Yuan, Yixiao Ge, Yanning Zhou, Dan Xu<br>
               <em>arXiv preprint</em>, 2026<br>
-              <a href="https://xpeng-robotics.github.io/stereovlm/">project page</a> /
+              <a href="https://xpeng-robotics.github.io/stereovlm/">Project Page</a> /
               <a href="https://arxiv.org/abs/2611.27915">arXiv</a> /
               <a href="https://huggingface.co/papers/2611.27915">Hugging Face</a>
             </td>
           </tr>
         </tbody></table>
 
-        <table id="projects" style="width:100%;border:0;border-spacing:0;margin:auto"><tbody>
-          <tr><td colspan="2" style="padding:20px"><heading>Projects</heading></td></tr>
+        <a id="projects"></a>
+        <table id="blog" style="width:100%;border:0;border-spacing:0;margin:auto"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <a href="https://xpeng-robotics.github.io/si0/"><img src="images/si0-planning.webp" width="200" alt="Si₀ visual planning example for sweeping objects into a container"></a>
+              <a href="https://xpeng-robotics.github.io/si0/"><span class="work-thumb tracking-thumb"><img src="images/si0-tracking-crop.jpg" width="200" height="125" alt="Si₀ tracking example showing colored waypoints for a cup and a bottle"></span></a>
             </td>
             <td style="width:75%;vertical-align:middle">
               <a href="https://xpeng-robotics.github.io/si0/"><papertitle>Si₀: The capabilities that transfer, perceived through the robot's eyes</papertitle></a><br>
               Yanning Zhou, Wentao Yuan, <strong>Chi Yan</strong>, Honghui Wang, Guoyang Zhao, Feng Qiu, Kewei Wang, Yixiao Ge<br>
               <em>XPENG Robotics</em>, 2026<br>
-              <a href="https://xpeng-robotics.github.io/si0/">project page</a>
+              <a href="https://xpeng-robotics.github.io/si0/">Blog Post</a>
             </td>
           </tr>
         </tbody></table>
@@ -217,9 +215,9 @@
               <br>
               <strong style="color:red;"><em>ICLR</em>, 2026</strong>
               <br>
-              <a href="https://yanchi-3dv.github.io/PG-Occ/">project page</a> /
-              <a href="https://arxiv.org/abs/2510.04759">arxiv</a> /
-              <a href="https://github.com/yanchi-3dv/PG-Occ">code</a> 
+              <a href="https://yanchi-3dv.github.io/PG-Occ/">Project Page</a> /
+              <a href="https://arxiv.org/abs/2510.04759">arXiv</a> /
+              <a href="https://github.com/yanchi-3dv/PG-Occ">Code</a>
             </td>
           </tr>
         </tbody></table>
@@ -267,9 +265,9 @@
               <br>
               <strong style="color:red;"><em>CVPR</em>, 2024 (Spotlight, top 2.6%)</strong>
               <br>
-              <a href="https://gs-slam.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2311.11700">arxiv</a> /
-              <a href="https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam">code</a>
+              <a href="https://gs-slam.github.io/">Project Page</a> /
+              <a href="https://arxiv.org/abs/2311.11700">arXiv</a> /
+              <a href="https://github.com/yanchi-3dv/diff-gaussian-rasterization-for-gsslam">Code</a>
             </td>
           </tr>
 
@@ -316,10 +314,10 @@
               <br>
               <strong style="color:red;"><em>CVPR</em>, 2024 (Spotlight, top 2.6%)</strong>
               <br>
-              <a href="https://delinqu.github.io/EN-SLAM/#">project page</a> /
-              <a href="https://arxiv.org/abs/2311.11013">arxiv</a> /
-              <a href="https://huggingface.co/datasets/delinqu/EN-SLAM-Dataset">data</a> /
-              <a href="https://github.com/DelinQu/EN-SLAM?tab=readme-ov-file">code</a>
+              <a href="https://delinqu.github.io/EN-SLAM/#">Project Page</a> /
+              <a href="https://arxiv.org/abs/2311.11013">arXiv</a> /
+              <a href="https://huggingface.co/datasets/delinqu/EN-SLAM-Dataset">Data</a> /
+              <a href="https://github.com/DelinQu/EN-SLAM?tab=readme-ov-file">Code</a>
             </td>
           </tr>
 
@@ -344,9 +342,9 @@
               <br>
               <strong style="color:red;"><em>ICCV</em>, 2025</strong>
               <br>
-              <a href="https://arxiv.org/abs/2504.07836">arxiv</a> /
-              <a href="https://huggingface.co/datasets/IPEC-COMMUNITY/AerialVG">data</a> /
-              <a href="https://github.com/Ideal-ljl/AerialVG">code</a>
+              <a href="https://arxiv.org/abs/2504.07836">arXiv</a> /
+              <a href="https://huggingface.co/datasets/IPEC-COMMUNITY/AerialVG">Data</a> /
+              <a href="https://github.com/Ideal-ljl/AerialVG">Code</a>
             </td>
           </tr>
         </tbody></table>
